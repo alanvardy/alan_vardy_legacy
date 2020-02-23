@@ -3,12 +3,12 @@
   <div class="col-lg-9">
     <h1>Welcome!</h1>
     <p>
-      I am Alan Vardy, a backend focused Elixir Developer out of Victoria, British Columbia, Canada.
+      I am Alan Vardy, a backend-focused Elixir Developer out of Victoria, British Columbia, Canada.
     </p>
     <p>
-      I love building performant real-time web applications with Phoenix, Phoenix LiveView and all the wonderous things provided out of the box by <%= link "Erlang\'s OTP", to: "https://en.wikipedia.org/wiki/Open_Telecom_Platform", target: "_blank" %>.
+      I love building performant, maintainable, and real-time web applications with Elixir, Phoenix, and all the wonderous things provided out of the box by <%= link "OTP", to: "https://en.wikipedia.org/wiki/Open_Telecom_Platform", target: "_blank" %>.
     </p>
-    <div class="d-none d-lg-incline-block">
+    <div class="d-none d-lg-block">
       <%= render "_invitation.html", conn: @conn %>
     </div>
   </div>
