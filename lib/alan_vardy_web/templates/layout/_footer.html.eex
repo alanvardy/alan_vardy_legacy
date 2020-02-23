@@ -1,10 +1,8 @@
-<div class="bg-dark mb-3 py-1 px-2 container rounded-bottom">
-    <div class="d-flex justify-content-between">
-        <%= link to: Routes.contact_path(@conn, :new), class: "nostyle mr-md-3", target: "_blank" do %>
-            <%= icon("mail") %> Alan Vardy
-        <% end %>
-        <%= link to: "https://github.com/alanvardy/", class: "nostyle mr-md-3", target: "_blank" do %>
-            <%= icon("github") %> GitHub
-        <% end %>
-    </div>
+<div class="footer">
+    <%= link to: Routes.contact_path(@conn, :new), class: "nostyle mr-md-3 small" do %>
+        <%= icon("mail") %> Alan Vardy
+    <% end %>
+    <%= link to: "https://github.com/alanvardy/", class: "nostyle mr-md-3 small", target: "_blank" do %>
+        <%= icon("github") %> GitHub
+    <% end %>
 </div>

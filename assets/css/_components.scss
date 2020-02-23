@@ -36,13 +36,13 @@ ul.pagination li a {
   @extend .text-muted;
   font-size: .7rem;
   @extend .text-right;
-}
 
-.image-container > img {
-  @extend .w-100;
-  @extend .rounded;
-  @extend .shadow;
-  @extend .mb-1;
+  & > img {
+    @extend .w-100;
+    @extend .rounded;
+    @extend .shadow;
+    @extend .mb-1;
+  }
 }
 
 .navbar-brand {
@@ -76,6 +76,21 @@ h4 {
   margin-top: 50px;
   font-size: 1.2rem !important;
   font-weight: 700;
+}
+
+.footer {
+  @extend .bg-dark;
+  @extend .mb-3;
+  @extend .py-1;
+  @extend .pl-4;
+  @extend .pr-3;
+  @extend .container;
+  @extend .rounded-bottom;
+  @extend .d-flex;
+  @extend .justify-content-between;
+  & > a > .eb-icon {
+    height: 20px;
+  }
 }
 
 .nostyle {
