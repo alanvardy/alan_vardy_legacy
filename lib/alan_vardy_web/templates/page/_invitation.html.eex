@@ -1,6 +1,6 @@
 <p>
   You are invited to:
-  <ul class="biglist pl-3 border-secondary border-left">
+  <ul class="biglist borderleft">
     <li>
       <%= link to: Routes.page_path(@conn, :aboutme) do %>
         <%= icon("smile") %> Find out more about me
