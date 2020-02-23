@@ -1,0 +1,83 @@
+<h1><%= @page_title %></h1>
+<p>
+    This is the part where I get to talk about myself! Other than pure self-indulgence,
+    I am creating this page so that you can understand a little bit more about who I am and where I come from.
+</p>
+<div class="row">
+    <div class="col-12 col-lg-6 order-lg-1">
+        <h2>I'm a Canadian and a New Zealander</h2>
+        <p>
+            I was born and raised in the land of sheep, kiwis, and hobbits. I have lived in a few different countries, travelled across most of the world's continents, and value those experiences.
+        </p>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-3">
+        <div class="image-container">
+            <%= img_tag "images/newzealand.jpg" %>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-2">
+        <h2>I'm a father and a husband</h2>
+        <p>It tends to focus priorities.</p>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-4">
+        <div class="image-container">
+            <%= img_tag "images/family.jpg" %>
+        </div>
+    </div>
+</div>
+<h2>I spent 5 years in the Canadian Forces</h2>
+<p>
+    Lets just say that the Combat Engineers have fantastic recruiting videos, and that Afghanistan had a lot of sand but no beaches.
+</p>
+<div class="image-container">
+    <%= img_tag "images/combatengineer.jpg" %>
+</div>
+<h2>I am a Journeyman Refrigeration Mechanic</h2>
+<p>
+    An excellent trade. I have now traded in my tools and steel-toed boots for a keyboard and comfortable slippers. The work ethic remains the same.
+</p>
+<div class="image-container">
+    <%= img_tag "images/refrigeration.jpg" %>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-6 order-lg-1">
+        <h2>I am the former host of the Edmonton Ruby Meetup</h2>
+        <p>
+           Because programming is about people and Edmonton has a fantastic community. <a href="https://www.yegrb.com/">Learn more at YEGRB.com</a>
+        </p>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-3">
+        <div class="image-container">
+            <%= img_tag "images/startupedmonton.jpg" %>
+            Credit <%= link "Startup Edmonton", to: "https://www.startupedmonton.com/", target: "_blank" %>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-2">
+        <h2>I now run the Elixir Victoria Meetup</h2>
+        <p> Supporting and growing the Elixir programming community in the Greater Victoria Area. <a href="https://www.elixirvictoria.com/">Learn more at elixirvictoria.com</a></p>
+    </div>
+    <div class="col-12 col-lg-6 order-lg-4">
+        <div class="image-container">
+            <%= img_tag "images/bridge.png" %>
+            Credit <%= link "Tj Holowaychuk", to: "https://unsplash.com/photos/rGPZSaAKwLA", target: "_blank" %>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <h2>...and do I ever love to write code!</h2>
+        <p>
+            I greatly enjoy solving problems and getting work done. I cleared IED's in Afghanistan so that our Infantry could live, move and fight on
+            the battlefield. I repaired heating and cooling equipment so people and product don't freeze or melt.
+        </p>
+        <p>
+            I bring the same attitude to design and programming. Your problems are my problems and I'm looking forward to working with you to overcome them.
+        </p>
+    </div>
+    <div class="col-12 col-lg-6 mt-lg-3">
+        <div class="image-container">
+            <%= img_tag "images/elixircode.png" %>
+        </div>
+    </div>
+</div>
+<%= render "_call_to_action.html", conn: @conn %>

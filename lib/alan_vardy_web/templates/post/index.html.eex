@@ -1,0 +1,24 @@
+<h1><%= @page_title %></h1>
+
+<%= tabs do %>
+<%= tab "Latest" do %>
+  <div class="container bg-white p-4 rounded text-black">
+    <%= for post <- Enum.take(@posts, 3) do %>
+      <%= render "_post.html", post: post, conn: @conn %>
+    <% end %>
+  </div>
+<% end %>
+<%= tab "All" do %>
+  <div class="container bg-white p-4 rounded text-black">
+    <%= for post <- @posts do %>
+      <%= render "_small_post.html", post: post, conn: @conn %>
+    <% end %>
+  </div>
+<% end %>
+<%= tab "Tags" do %>
+  <div class="container bg-white p-4 rounded text-black">
+    <%= render "_tags.html", tags: @tags, conn: @conn %>
+  </div>
+<% end %>
+<% end %>
+<%= render AlanVardyWeb.PageView, "_call_to_action.html", conn: @conn %>

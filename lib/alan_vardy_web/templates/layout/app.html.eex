@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= if production?() do %>
+      <%= render "_google_analytics.html" %>
+    <% end %>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AV | <%= assigns[:page_title] %></title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+  </head>
+  <body class="bg-grey3">
+  <%= render "_navbar.html", conn: @conn %>
+    <div class="m-1">
+      <%= flash_alert(@conn) %>
+    </div>
+    <main role="main" class="pb-0 mt-5">
+      <div class="container rounded-top bg-grey1 px-3 px-md-5 mt-0 py-5">
+      <%= render @view_module, @view_template, assigns %>
+      </div>
+    </main>
+    <%= render "_footer.html", conn: @conn %>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

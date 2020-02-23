@@ -1,0 +1,19 @@
+<div class="d-none d-md-flex justify-content-between">
+  <h1><%= @post.title %></h1>
+  <h1 class="text-gray-500"><%= @post.date %></h1>
+</div>
+<div class="d-block d-md-none">
+  <h1><%= @post.title %></h1>
+  <span class="text-gray-500 float-right"><%= @post.date %></span>
+</div>
+<div class="d-block d-md-flex justify-content-between">
+  <div>Written by <%= @post.author %></div>
+  <div>Tagged with <%= render "_small_tags.html", tags: @post.tags, conn: @conn %></div>
+</div>
+
+
+<div class="blog-body">
+  <%= raw @post.body %>
+</div>
+
+<%= render AlanVardyWeb.PageView, "_call_to_action.html", conn: @conn %>

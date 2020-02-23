@@ -1,0 +1,21 @@
+
+<div class="row">
+  <div class="col-lg-9">
+    <h1>Welcome!</h1>
+    <p>
+      I am Alan Vardy, a backend focused Elixir Developer out of Victoria, British Columbia, Canada.
+    </p>
+    <p>
+      I love building performant real-time web applications with Phoenix, Phoenix LiveView and all the wonderous things provided out of the box by <%= link "Erlang\'s OTP", to: "https://en.wikipedia.org/wiki/Open_Telecom_Platform", target: "_blank" %>.
+    </p>
+    <div class="d-none d-lg-incline-block">
+      <%= render "_invitation.html", conn: @conn %>
+    </div>
+  </div>
+  <div class="col-7 d-lg-none">
+    <%= render "_invitation.html", conn: @conn %>
+  </div>
+  <div class="col-5 col-lg-3 image-container">
+    <%= img_tag "images/alanvardy.jpg" %>
+  </div>
+</div>

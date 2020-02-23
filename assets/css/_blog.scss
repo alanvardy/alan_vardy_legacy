@@ -1,0 +1,56 @@
+.blog-body {
+  @extend .bg-white;
+  @extend .text-black;
+  @extend .my-4;
+  @extend .rounded;
+  @extend .p-5;
+  @extend .shadow;
+}
+
+// Headings
+
+.blog-body > h1 {
+  margin-top: 4rem;
+  margin-bottom: 1rem !important;
+  font-size: 1.6rem !important;
+}
+
+.blog-body > h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem !important;
+}
+
+.blog-body > h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem !important;
+}
+
+// Pictures
+
+.blog-body > p > img {
+  @extend .w-50;
+  @extend .d-block;
+  @extend .mx-auto;
+  @extend .rounded;
+  @extend .shadow;
+  @extend .my-4;
+}
+
+// Syntax Highlighting
+
+pre {
+  background-color: rgb(36, 40, 46);
+  color: rgb(231, 231, 231) !important;
+  @extend .p-3;
+  @extend .rounded;
+  @extend .shadow;
+  @extend .m-3
+}
+
+.kd, .k {color: rgb(219, 112, 219);}
+.nc, .p {color: rgb(233, 236, 57);}
+.sr, .se, .nf, .kn{color: rgb(146, 195, 235);}
+.c, .c1 {color: rgb(128, 128, 128);}
+.na, .ni {color: rgb(235, 61, 61);}
+.ss {color: rgb(59, 212, 205);}
+.s {color: rgb(132, 202, 135);}
