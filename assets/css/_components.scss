@@ -2,19 +2,27 @@ ul.pagination li a {
   color: map_get($theme-colors, 'grey4');
 }
 
-.nav-link {
-  border-bottom: 1px solid transparent;
-  box-sizing: border-box;
-  transition: .5s ease-in;
-  -webkit-transition: .5s ease-in;
+.nav-item {
+  .nav-link {
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+  }
 
-  &.active {
+  &.active > .nav-link {
     border-bottom: 1px solid map_get($theme-colors, 'grey2');
   }
 }
 
-.border-secondary {
-  border-width: 2px !important;
+.borderleft {
+  border-left: 2px solid map_get($theme-colors, 'secondary');
+  @extend .pl-3;
+}
+
+.bordertop {
+  border-top: 2px solid map_get($theme-colors, 'secondary');
+  @extend .pt-4;
 }
 
 .nav-tabs .nav-item {
