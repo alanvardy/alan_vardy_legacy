@@ -3,21 +3,24 @@
   @extend .text-black;
   @extend .my-4;
   @extend .rounded;
-  @extend .p-5;
+  @extend .px-5;
+  @extend .pb-5;
+  @extend .pt-3;
   @extend .shadow;
 }
 
 // Headings
 
 .blog-body > h1 {
-  margin-top: 4rem;
+  @extend .pt-5;
   margin-bottom: 1rem !important;
   font-size: 1.6rem !important;
 }
 
 .blog-body > h2 {
-  margin-top: 2rem;
+  @extend .pt-1;
   font-size: 1.4rem !important;
+  @extend .text-secondary
 }
 
 .blog-body > h3 {
