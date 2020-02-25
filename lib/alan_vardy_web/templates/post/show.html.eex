@@ -1,8 +1,8 @@
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-9">
   <h1><%= @post.title %></h1>
   </div>
-  <div class="col-md-4 text-muted">
+  <div class="col-md-3 text-muted">
     <h1 class="float-right"><%= @post.date %></h1>
   </div>
 </div>
