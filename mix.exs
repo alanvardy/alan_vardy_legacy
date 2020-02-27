@@ -53,7 +53,7 @@ defmodule AlanVardy.MixProject do
       {:ex_effective_bootstrap, "~> 0.1.15"},
       {:bamboo, "~> 1.4"},
       {:recaptcha, "~> 3.0"},
-      {:postex, "~> 0.1.0"},
+      {:postex, "~> 0.1.2"},
       # Tooling
       {:ex_check, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, "~> 1.2.0", only: [:dev, :test], runtime: false},
