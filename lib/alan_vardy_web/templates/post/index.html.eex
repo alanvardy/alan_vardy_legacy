@@ -3,7 +3,7 @@
 <%= tabs do %>
 <%= tab "Latest" do %>
   <div class="container bg-white p-4 rounded text-black">
-    <%= for post <- Enum.take(@posts, 3) do %>
+    <%= for post <- Enum.take(@posts, 5) do %>
       <%= render "_post.html", post: post, conn: @conn %>
     <% end %>
   </div>
