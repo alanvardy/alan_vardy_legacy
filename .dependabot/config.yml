@@ -3,10 +3,14 @@ update_configs:
   - package_manager: "elixir:hex"
     directory: "/"
     update_schedule: "live"
+    default_assignees:
+    - "alanvardy"
     automerged_updates:
     - match: {dependency_type: "all", update_type: "all"}
   - package_manager: "javascript"
     directory: "/assets"
     update_schedule: "live"
+    default_assignees:
+    - "alanvardy"
     automerged_updates:
     - match: {dependency_type: "all", update_type: "all"}
