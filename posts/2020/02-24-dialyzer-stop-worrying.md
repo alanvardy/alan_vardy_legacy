@@ -99,7 +99,7 @@ Dialyzer greatly benefits from updates, so make sure that you are using the late
 Your `mix.exs` has by default:
 
 ```
-  elixir: "~> 1.5",
+elixir: "~> 1.5",
 ```
 
 Which is just a crime. Update it and recompile.
