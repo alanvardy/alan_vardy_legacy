@@ -24,4 +24,14 @@ defmodule AlanVardyWeb.PostController do
         render(conn, ErrorView, "404.html")
     end
   end
+
+  @spec rss(Plug.Conn.t(), any) :: Plug.Conn.t()
+  def rss(conn, _params) do
+    assigns = [
+      posts: Blog.list_posts(),
+      page_title: "RSS"
+    ]
+
+    render(conn, "rss.xml", assigns)
+  end
 end
