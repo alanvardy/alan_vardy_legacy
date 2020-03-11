@@ -90,6 +90,28 @@ This creates more problems than it solves. A bad typespec is worse than no types
 
 Don't put off all your specs until the MVP is done, it didn't work for your tests and it won't work for your specs either.
 
+## Specify your Elixir version
+
+credit to [Matt Reimer](https://github.com/matt-riemer)
+
+Dialyzer greatly benefits from updates, so make sure that you are using the latest versions of Elixir and Erlang! I have had multiple occasions where strange errors disappeared simply by updating the version number.
+
+Your `mix.exs` has by default:
+
+```
+  elixir: "~> 1.5",
+```
+
+Which is just a crime. Update it and recompile.
+
+Use asdf and a `.tool-versions` file, and specify your dependencies:
+
+```
+elixir 1.10.1
+erlang 22.1.8
+nodejs 12.6.0
+```
+
 # Writing typespecs
 
 Typespecs are written using the `@spec` module attribute above a function, customarily above the function. Here is an example of a function that takes two integers and returns an integer:
@@ -115,7 +137,7 @@ Some tips:
                 id: non_neg_integer | nil,
                 email: binary | nil,
                 name: binary | nil,
-                preference: Preference.t() | nil
+                preference: Preference.t() | nil | Ecto.Association.NotLoaded.t()
               }
       
         schema "users" do
