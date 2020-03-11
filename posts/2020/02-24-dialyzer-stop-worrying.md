@@ -8,7 +8,7 @@ Alan Vardy
 
 
 ==description==
-A quick example for testing your GraphQL queries
+How to make Dialyzer work better for you
 
 ==tags==
 elixir,dialyzer,ecto
