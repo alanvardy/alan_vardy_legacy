@@ -3,7 +3,7 @@ defmodule AlanVardyWeb.PostController do
   alias AlanVardy.Blog
   alias AlanVardyWeb.ErrorView
 
-  @spec index(Plug.Conn.t(), any) :: Plug.Conn.t()
+  @spec index(Plug.Conn.t(), map) :: Plug.Conn.t()
   def index(conn, %{"page" => page}) do
     assigns = [
       page: page,
@@ -15,7 +15,6 @@ defmodule AlanVardyWeb.PostController do
     render(conn, "index.html", assigns)
   end
 
-  @spec index(Plug.Conn.t(), any) :: Plug.Conn.t()
   def index(conn, _params) do
     assigns = [
       page: 1,

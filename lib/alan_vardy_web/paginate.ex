@@ -1,9 +1,9 @@
 defmodule AlanVardyWeb.Paginate do
+  @moduledoc "Builds the pagination HTML for blog posts"
   use Phoenix.HTML
 
   alias AlanVardy.Blog
   alias AlanVardyWeb.Router.Helpers, as: Routes
-  alias Postex.Post
 
   @doc "Builds the pagination selector with page numbers, next and back etc."
   @spec build(Plug.Conn.t(), pos_integer | String.t()) :: {:safe, iolist}
@@ -33,17 +33,17 @@ defmodule AlanVardyWeb.Paginate do
   end
 
   @spec paginate_button(Plug.Conn.t(), String.t() | integer, integer, integer) :: {:safe, iolist}
-  defp paginate_button(conn, "Next", page, pages) when page == pages do
+  defp paginate_button(_conn, "Next", page, pages) when page == pages do
     contag("Next", :a, class: "page-link text-center mt-1", tabindex: "-1")
     |> contag(:li, class: "page-item disabled")
   end
 
-  defp paginate_button(conn, "Previous", 1, _pages) do
+  defp paginate_button(_conn, "Previous", 1, _pages) do
     contag("Previous", :a, class: "page-link text-center mt-1", tabindex: "-1")
     |> contag(:li, class: "page-item disabled")
   end
 
-  defp paginate_button(conn, "....", _page, _pages) do
+  defp paginate_button(_conn, "....", _page, _pages) do
     contag("....", :a, class: "page-link text-center mt-1 pagination-width", tabindex: "-1")
     |> contag(:li, class: "page-item disabled")
   end
@@ -64,7 +64,7 @@ defmodule AlanVardyWeb.Paginate do
     |> contag(:li, [])
   end
 
-  defp paginate_button(conn, same, same, _pages) do
+  defp paginate_button(_conn, same, same, _pages) do
     contag(same, :a, class: "page-link text-center mt-1 pagination-width")
     |> contag(:li, class: "page-item active")
   end
