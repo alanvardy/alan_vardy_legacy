@@ -6,18 +6,13 @@
 </div>
 
 <%= tabs do %>
-  <%= tab "Latest" do %>
+  <%= tab "Posts" do %>
     <div class="container bg-white p-4 rounded text-black">
-      <%= for post <- Enum.take(@posts, 5) do %>
+    <%= paginate(@conn, @page) %>
+      <%= for post <- @posts do %>
         <%= render "_post.html", post: post, conn: @conn %>
       <% end %>
-    </div>
-  <% end %>
-  <%= tab "All" do %>
-    <div class="container bg-white p-4 rounded text-black">
-      <%= for post <- @posts do %>
-        <%= render "_small_post.html", post: post, conn: @conn %>
-      <% end %>
+    <%= paginate(@conn, @page) %>
     </div>
   <% end %>
   <%= tab "Tags" do %>

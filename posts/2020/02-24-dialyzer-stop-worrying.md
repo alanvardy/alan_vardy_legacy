@@ -38,7 +38,7 @@ Dialyzer can be introduced gradually into a code base, in fact the tool can be r
 
 # Dialyzer is an Erlang tool
 
-Because Elixir is [warning massive oversimplification incoming] just Erlang with a bunch of delicious sprinkles on top, it compiles down to the same BEAM beam files and can be analyzed in the same manner. You can [read the docs here](http://erlang.org/doc/apps/dialyzer/dialyzer_chapter.html){:target="_blank"}, but don't worry about the commands given, that comes later in this post.
+Because Elixir is [warning massive oversimplification incoming] just Erlang with a bunch of delicious sprinkles on top, it compiles down to the same BEAM beam files and can be analyzed in the same manner. You can [read the docs here](http://erlang.org/doc/apps/dialyzer/dialyzer_chapter.html), but don't worry about the commands given, that comes later in this post.
 
 # Why use Dialyzer
 
@@ -58,11 +58,11 @@ There are not that many types, so it is easy to hold the syntax in your head aft
 
 ## Use Dialyxir
 
-[Add Dialyxir to your project](https://github.com/jeremyjh/dialyxir){:target="_blank"} to enable the `mix dialyzer` command, better error messages, better defaults etc. I consider this tool to be non-optional. 
+[Add Dialyxir to your project](https://github.com/jeremyjh/dialyxir) to enable the `mix dialyzer` command, better error messages, better defaults etc. I consider this tool to be non-optional. 
 
 ## Install the Elixir LS fork
 
-If you are using Visual Studio Code then install the [vscode-elixir-ls plugin](https://marketplace.visualstudio.com/items?itemName=elixir-lsp.elixir-ls){:target="_blank"}, which can also be found [on GitHub](https://github.com/elixir-lsp/vscode-elixir-ls){:target="_blank"}. Note that I am linking to the actively maintained fork, and not the original repository. The original author, Jake Becker, has been mysteriously absent and I wish him all the best - and thank him for his work. This plugin will work with dialyzer, credo, the formatter and other tooling to provide linting in your browser window and is a fantastic resource. 
+If you are using Visual Studio Code then install the [vscode-elixir-ls plugin](https://marketplace.visualstudio.com/items?itemName=elixir-lsp.elixir-ls), which can also be found [on GitHub](https://github.com/elixir-lsp/vscode-elixir-ls). Note that I am linking to the actively maintained fork, and not the original repository. The original author, Jake Becker, has been mysteriously absent and I wish him all the best - and thank him for his work. This plugin will work with dialyzer, credo, the formatter and other tooling to provide linting in your browser window and is a fantastic resource. 
 
 ## There are helpers you can use in IEx
 
@@ -74,7 +74,7 @@ use `i/1` and `t/1` to introspect your data
     @type index() :: non_neg_integer()
     @type default() :: any()
     
-Find out more in the [IEx.Helpers](https://hexdocs.pm/iex/IEx.Helpers.html){:target="_blank"} module
+Find out more in the [IEx.Helpers](https://hexdocs.pm/iex/IEx.Helpers.html) module
 
 # Good habits
 
@@ -119,7 +119,7 @@ Typespecs are written using the `@spec` module attribute above a function, custo
     @spec add_things(integer, integer) :: integer
     def add_things(num1, num2), do: num1 + num2
 
-Give the [typespec documentation](https://hexdocs.pm/elixir/typespecs.html){:target="_blank"} a read through!
+Give the [typespec documentation](https://hexdocs.pm/elixir/typespecs.html) a read through!
 
 Some tips:
 
@@ -131,7 +131,7 @@ Some tips:
 - Lists, maps, tuples can be expressed literally
 - Try not to use any, it's lazy.
 - If you are having trouble writing the typespec, there could be an issue with your function, not the spec.
-- Add specs to your [Ecto Schemas](https://hexdocs.pm/ecto/Ecto.Schema.html){:target="_blank"}
+- Add specs to your [Ecto Schemas](https://hexdocs.pm/ecto/Ecto.Schema.html)
 
       @type t :: %__MODULE__{
                 id: non_neg_integer | nil,
@@ -190,4 +190,4 @@ This one is similar: one of the paths in your case statement can never be called
 
 Hopefully this sheds some light on a few of the techniques you can use to make Dialyzer work for you.
 
-I recommend that you follow up with [this article from Learn You Some Erlang](https://learnyousomeerlang.com/dialyzer){:target="_blank"} if you are interested in discovering more, and let me know if I can do anything to make this article better!
+I recommend that you follow up with [this article from Learn You Some Erlang](https://learnyousomeerlang.com/dialyzer) if you are interested in discovering more, and let me know if I can do anything to make this article better!
