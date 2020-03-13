@@ -20,6 +20,7 @@ defmodule AlanVardyWeb.Router do
     get "/aboutme", PageController, :aboutme
     get "/blog", PostController, :index
     get "/blog/rss.xml", PostController, :rss
+    get "/blog/:page", PostController, :index
     resources "/post", PostController, only: [:show]
     resources "/tag", TagController, only: [:show]
     get "/contact", ContactController, :new

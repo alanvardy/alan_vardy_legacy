@@ -4,9 +4,22 @@ defmodule AlanVardyWeb.PostController do
   alias AlanVardyWeb.ErrorView
 
   @spec index(Plug.Conn.t(), any) :: Plug.Conn.t()
+  def index(conn, %{"page" => page}) do
+    assigns = [
+      page: page,
+      posts: Blog.list_posts(page),
+      tags: Blog.tags_with_count(),
+      page_title: "Blog"
+    ]
+
+    render(conn, "index.html", assigns)
+  end
+
+  @spec index(Plug.Conn.t(), any) :: Plug.Conn.t()
   def index(conn, _params) do
     assigns = [
-      posts: Blog.list_posts(),
+      page: 1,
+      posts: Blog.list_posts(1),
       tags: Blog.tags_with_count(),
       page_title: "Blog"
     ]

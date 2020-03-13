@@ -15,7 +15,7 @@ elixir,phoenix,absinthe,graphql
 
 ==body==
 
-I am taking the [Learn-Elixir.dev](https://learn-elixir.dev/home){:target="_blank"} course right now to fill in some knowledge gaps, including [GraphQL](https://graphql.org/){:target="_blank"}
+I am taking the [Learn-Elixir.dev](https://learn-elixir.dev/home) course right now to fill in some knowledge gaps, including [GraphQL](https://graphql.org/)
 
 For the purposes of this post I am not describing how to create the functionality in Absinthe, just how to test it. It is a simple resource called `user`. Inventive, right?
 
@@ -48,7 +48,7 @@ I am adding these params as a module attribute to reuse between tests, nothing c
 
 This is where things get a bit different! This doc defines your argument types with:
 
- `findUser($name: String, $email: String, $age: Int)` ([learn more about GraphQL types](https://graphql.org/learn/schema/#the-query-and-mutation-types){:target="_blank"})
+ `findUser($name: String, $email: String, $age: Int)` ([learn more about GraphQL types](https://graphql.org/learn/schema/#the-query-and-mutation-types))
  
  Something interesting is that it does not matter what is used for `findUser` because it is simple defining a new query, it can be `getUser`, `fetchUser` or `starshipsWereMeantToFly` for all that your code cares.
  
