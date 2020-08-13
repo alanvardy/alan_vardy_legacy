@@ -44,24 +44,24 @@ defmodule AlanVardy.MixProject do
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_ecto, "~> 4.1"},
       {:ecto_sql, "~> 3.4"},
-      {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 2.1"},
+      {:postgrex, "~> 0.15"},
+      {:phoenix_html, "~> 2.14"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:gettext, "~> 0.11"},
-      {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"},
+      {:gettext, "~> 0.18"},
+      {:jason, "~> 1.2"},
+      {:plug_cowboy, "~> 2.3"},
       {:ex_effective_bootstrap,
        git: "https://github.com/alanvardy/ex_effective_bootstrap.git", branch: "master"},
-      {:bamboo, "~> 1.4"},
+      {:bamboo, "~> 1.5"},
       {:recaptcha, "~> 3.0"},
       {:postex, git: "https://github.com/alanvardy/postex.git", branch: "develop"},
       # Tooling
-      {:ex_check, ">= 0.0.0", only: :dev, runtime: false},
+      {:ex_check, "~> 0.12", only: :dev, runtime: false},
       {:credo, "~> 1.4.0", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 1.0.0-rc.6", only: [:dev, :test], runtime: false},
-      {:sobelow, "~> 0.8", only: [:dev, :test], runtime: false},
-      {:excoveralls, "~> 0.10", only: :test, runtime: false},
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
+      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.10", only: [:dev, :test], runtime: false},
+      {:excoveralls, "~> 0.13", only: :test, runtime: false},
+      {:ex_doc, "~> 0.22", only: :dev, runtime: false}
     ]
   end
 
