@@ -12,7 +12,7 @@ config :alan_vardy, AlanVardyWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "G7pRZcqLSm+gvLgl85R1d05YfD6Xxyp+uJE1Xozuw2oAj+XPLPnjvYlgGv+HKwaP",
   render_errors: [view: AlanVardyWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: AlanVardy.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: AlanVardy.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,

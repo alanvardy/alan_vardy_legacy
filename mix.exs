@@ -40,20 +40,21 @@ defmodule AlanVardy.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.9"},
-      {:phoenix_pubsub, "~> 1.1"},
-      {:phoenix_ecto, "~> 4.0"},
-      {:ecto_sql, "~> 3.1"},
+      {:phoenix, "~> 1.5"},
+      {:phoenix_pubsub, "~> 2.0"},
+      {:phoenix_ecto, "~> 4.1"},
+      {:ecto_sql, "~> 3.4"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 2.11"},
+      {:phoenix_html, "~> 2.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:ex_effective_bootstrap, "~> 0.1.15"},
+      {:ex_effective_bootstrap,
+       git: "https://github.com/alanvardy/ex_effective_bootstrap.git", branch: "master"},
       {:bamboo, "~> 1.4"},
       {:recaptcha, "~> 3.0"},
-      {:postex, "~> 0.1.3"},
+      {:postex, git: "https://github.com/alanvardy/postex.git", branch: "develop"},
       # Tooling
       {:ex_check, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, "~> 1.4.0", only: [:dev, :test], runtime: false},

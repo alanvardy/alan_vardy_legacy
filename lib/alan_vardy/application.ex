@@ -9,6 +9,7 @@ defmodule AlanVardy.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
+      {Phoenix.PubSub, [name: AlanVardy.PubSub, adapter: Phoenix.PubSub.PG2]},
       AlanVardyWeb.Endpoint
       # Starts a worker by calling: AlanVardy.Worker.start_link(arg)
       # {AlanVardy.Worker, arg},
