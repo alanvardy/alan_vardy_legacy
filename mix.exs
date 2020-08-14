@@ -55,7 +55,7 @@ defmodule AlanVardy.MixProject do
        git: "https://github.com/alanvardy/ex_effective_bootstrap.git", branch: "master"},
       {:bamboo, "~> 1.5"},
       {:recaptcha, "~> 3.0"},
-      {:postex, git: "https://github.com/alanvardy/postex.git", branch: "develop"},
+      {:postex, "~> 0.1"},
       # Tooling
       {:ex_check, "~> 0.12", only: :dev, runtime: false},
       {:credo, "~> 1.4.0", only: [:dev, :test], runtime: false},
