@@ -49,6 +49,7 @@ defmodule AlanVardy.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
+      {:plug, "~> 1.10"},
       {:plug_cowboy, "~> 2.3"},
       {:ex_effective_bootstrap,
        git: "https://github.com/alanvardy/ex_effective_bootstrap.git", branch: "master"},
