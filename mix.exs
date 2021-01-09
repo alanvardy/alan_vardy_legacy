@@ -42,7 +42,6 @@ defmodule AlanVardy.MixProject do
     [
       {:phoenix, "~> 1.5"},
       {:phoenix_pubsub, "~> 2.0"},
-      {:phoenix_ecto, "~> 4.2.1"},
       {:ecto_sql, "~> 3.5"},
       {:phoenix_html, "~> 2.14"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
@@ -57,7 +56,7 @@ defmodule AlanVardy.MixProject do
       {:postex, "~> 0.1"},
       # Tooling
       {:ex_check, "~> 0.12", only: :dev, runtime: false},
-      {:credo, "~> 1.4.0", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:sobelow, "~> 0.10", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.13", only: :test, runtime: false},
