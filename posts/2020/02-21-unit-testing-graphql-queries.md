@@ -11,7 +11,7 @@ Alan Vardy
 A quick example for testing your GraphQL queries
 
 ==tags==
-elixir,phoenix,absinthe,graphql
+elixir,phoenix,absinthe,graphql,testing
 
 ==body==
 
