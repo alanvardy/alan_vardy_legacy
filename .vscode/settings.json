@@ -1,0 +1,23 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/posts/2021/01-20-3-bad-args-against-tests.md"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "canadian",
+                "domain": "technical",
+                "emotions": [
+                    "confident",
+                    "optimistic",
+                    "friendly"
+                ],
+                "goals": [
+                    "inform",
+                    "convince"
+                ]
+            }
+        }
+    ]
+}

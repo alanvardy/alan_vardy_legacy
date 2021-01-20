@@ -11,7 +11,7 @@ Alan Vardy
 Make your tests run automagically when you write Ruby code
 
 ==tags==
-ruby,rails
+ruby,rails,testing
 
 ==body==
 The guardfile is sourced from [Michael Hartl’s Ruby on Rails Tutorial](https://www.railstutorial.org/book), which is widely considered to be the best tutorial on Rails.
