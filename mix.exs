@@ -41,8 +41,8 @@ defmodule AlanVardy.MixProject do
   defp deps do
     [
       {:phoenix, "~> 1.5"},
+      {:phoenix_ecto, "~> 4.0"},
       {:phoenix_pubsub, "~> 2.0"},
-      {:ecto_sql, "~> 3.5"},
       {:phoenix_html, "~> 2.14"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.18"},
@@ -51,7 +51,7 @@ defmodule AlanVardy.MixProject do
       {:plug_cowboy, "~> 2.3"},
       {:ex_effective_bootstrap,
        git: "https://github.com/alanvardy/ex_effective_bootstrap.git", branch: "update_dependencies"},
-      {:bamboo, "~> 1.5"},
+      {:bamboo, "~> 2.2.0"},
       {:recaptcha, "~> 3.0"},
       {:postex, "~> 0.1"},
       {:timex, "~> 3.6"},
