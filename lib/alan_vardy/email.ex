@@ -21,7 +21,7 @@ defmodule AlanVardy.Email do
     end
   end
 
-  @spec send(Bamboo.Email.t()) :: Bamboo.Email.t()
+  @spec send(Bamboo.Email.t()) :: {:ok, Bamboo.Email.t()} | {:error, binary | map}
   def send(message) do
     deliver_now(message)
   end
