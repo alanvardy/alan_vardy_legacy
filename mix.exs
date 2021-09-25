@@ -53,7 +53,7 @@ defmodule AlanVardy.MixProject do
        git: "https://github.com/alanvardy/ex_effective_bootstrap.git",
        branch: "update_dependencies"},
       {:bamboo, "~> 2.2.0"},
-      {:recaptcha, "~> 3.0"},
+      {:recaptcha, git: "https://github.com/alanvardy/recaptcha.git", branch: "master"},
       {:postex, "~> 0.1"},
       {:timex, "~> 3.6"},
       {:ecto, "~> 3.5"},

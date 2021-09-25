@@ -1,4 +1,6 @@
 [
+  retry: false,
+  fix: true,
   tools: [
     {:format, command: "mix format", exit_status: false},
     {:credo, command: "mix credo --strict", deps: [:format]},
